@@ -70,19 +70,38 @@
 \PassOptionsToPackage{american}{babel}
   \usepackage{babel}
 
+% \usepackage{csquotes}
+% \PassOptionsToPackage{%
+%   backend=bibtex,
+%   bibencoding=ascii,
+%   language=auto,
+%   style=alphabetic,
+%   sorting=nyt,
+%   maxbibnames=10,
+%   natbib=true
+% }{biblatex}
+%   \usepackage{biblatex}
+%commented by norton
+
 \usepackage{csquotes}
 \PassOptionsToPackage{%
-  backend=bibtex,
-  bibencoding=ascii,
+  backend=biber,
+  bibencoding=inputenc,%ascii,
   language=auto,
-  style=alphabetic,
-  sorting=nyt,
+  style=ieee,
+%   sorting=nyt,
   maxbibnames=10,
-  natbib=true
+  natbib=true,
+%   pagination=none,
+  refsection=chapter
 }{biblatex}
   \usepackage{biblatex}
+\usepackage{textgreek} % used so greek symbols work in references
 
-\PassOptionsToPackage{fleqn}{amsmath}       % math environments and more by the AMS 
+
+
+% \PassOptionsToPackage{fleqn}{amsmath}       % math environments and more by the AMS 
+%commented by Norton
   \usepackage{amsmath}
 
 % ******************************************************************** 

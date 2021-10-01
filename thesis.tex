@@ -22,24 +22,24 @@
 % -----------------------------------------------------------------------------
 % Thesis and submission:
 \newcommand{\myTitle}{Using Thinking Machines to Alleviate our Dependency on Guild Navigators}
-\newcommand{\mySubmissionYear}{2018}
-\newcommand{\mySubmissionMonth}{October}
+\newcommand{\mySubmissionYear}{2021}
+\newcommand{\mySubmissionMonth}{April}
 \newcommand{\mySubmissionDay}{31}
 
 % Regarding yourself:
-\newcommand{\myFirstName}{Feyd-Rautha}
-\newcommand{\myLastName}{Harkonnen}
-\newcommand{\myWebsite}{https://en.wikipedia.org/wiki/Feyd-Rautha}
-\newcommand{\myBirthYear}{1965}
+\newcommand{\myFirstName}{Norton Glen}
+\newcommand{\myLastName}{West}
+\newcommand{\myWebsite}{https://en.wikipedia.org} %Put linkedin
+\newcommand{\myBirthYear}{1969}
 \newcommand{\myBirthMonth}{January}
 \newcommand{\myBirthDay}{31}
 \newcommand{\myBirthPlace}{Lankiveil}
 
 % Primary supervisor:
 \newcommand{\myProfTitle}{Prof.}
-\newcommand{\myProfFirstName}{Piter}
-\newcommand{\myProfLastName}{De Vries}
-\newcommand{\myProfWebsite}{http://homepage.cs.latrobe.edu.au/pdevries}
+\newcommand{\myProfFirstName}{Adam}
+\newcommand{\myProfLastName}{Mechler}
+\newcommand{\myProfWebsite}{}
 
 % Co-supervisor:
 \newcommand{\myOtherProfTitle}{Dr}
@@ -48,14 +48,26 @@
 \newcommand{\myOtherProfWebsite}{http://homepage.cs.latrobe.edu.au/hthufir}
 
 % University related:
-\newcommand{\myDepartment}{Department of Computer Science and Information Technology}
+\newcommand{\myDepartment}{Department of Chemistry and Physics}
 \newcommand{\myFaculty}{College of Science, Health and Engineering}
-\newcommand{\mySchool}{School of Engineering and Mathematical Sciences}
+\newcommand{\mySchool}{School of Molecular Sciences}
 \newcommand{\myUni}{La Trobe University}
 % -----------------------------------------------------------------------------
 
 \input{classicthesis-config}
-\addbibresource{library.bib}
+\addbibresource{references.bib}
+
+%% Norton's preamble%%
+\usepackage{pdfpages}
+\usepackage{graphicx}
+
+%\usepackage[showframe]{geometry} \geometry{ a4paper, total={210mm,297mm}, left=35mm, right=19mm, top=19mm, bottom=19mm }
+ 
+% \usepackage[showframe,left=35mm,right=19mm,top=25mm,bottom=19mm]{geometry}
+\usepackage[left=35mm,right=19mm,top=25mm,bottom=19mm]{geometry}
+
+
+%%
 
 \begin{document}
   \frenchspacing
@@ -79,9 +91,9 @@
   \chapter*{Statement of Authorship}
   \addcontentsline{toc}{chapter}{Declaration of Authorship}
   \input{text/ch0-declaration}
-  
+
+  \input{text/ch0-publications}  
   \input{text/ch0-acknowledgements}
-  \input{text/ch0-publications}
   \input{text/ch0-dedication}
   
   \cleardoublepage
@@ -109,6 +121,12 @@
   
   \chapter{Conclusions}\label{c:Conclusions}
   \input{text/ch7}
+  
+  \chapter{Paper}\label{c:Paper}
+  \input{text/ch8}
+  
+  
+  
   
   \cleardoublepage
   \appendix
